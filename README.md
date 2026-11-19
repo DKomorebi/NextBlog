@@ -57,7 +57,7 @@ pnpm build
 
 - [全栈博客使用与教学](docs/05-全栈博客使用与教学.md)：文件说明、Cookie/Session、CSRF、权限矩阵、接口与部署。
 - [浅色截图](docs/theme-light.png) / [深色截图](docs/theme-dark.png) / [手机截图](docs/theme-mobile-dark.png)。
-- [完整系列教程与源码归档](https://github.com/DKomorebi/DKomorebi.github.io/tree/main/_posts)：第九至十四篇对应当前全栈版本。
-- docs/01–04 中的文章是上一阶段静态 Demo 的历史教学快照，当前运行方式以本文件和 docs/05 为准。
+- [完整系列教程与源码归档](https://github.com/DKomorebi/DKomorebi.github.io/tree/main/_posts)：全系列 15 篇均对应当前全栈版本，第十五篇提供项目结构与完整源码汇总。
+- [全栈入门教学](docs/01-教学说明.md) / [后端业务](docs/02-后端接入路线.md) / [验收与排错](docs/03-验收与练习.md) / [项目结构与源码索引](docs/06-项目结构与源码索引.md)。
 
 当前不包含邮件验证、密码找回、图片上传和嵌套回复。数据保存在 PostgreSQL 中，旧 out 目录不再是可部署的当前版本。
