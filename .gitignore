@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+.tools/
+
+.pnpm-store/
+.idea/
+
+.next-fullstack/
+
+# Generated copies published in the separate teaching blog
+docs/dink-*/
