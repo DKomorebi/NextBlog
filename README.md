@@ -55,6 +55,8 @@ pnpm build
 
 ## 文档
 
+- [四组十二篇深入教学报告](docs/reports/00-guide.md)：React 与 Next.js、Express 与 TypeScript、TypeORM、数据库连接；含具体代码和练习答案。
+
 - [全栈博客使用与教学](docs/05-全栈博客使用与教学.md)：文件说明、Cookie/Session、CSRF、权限矩阵、接口与部署。
 - [浅色截图](docs/theme-light.png) / [深色截图](docs/theme-dark.png) / [手机截图](docs/theme-mobile-dark.png)。
 - [完整系列教程与源码归档](https://github.com/DKomorebi/DKomorebi.github.io/tree/main/_posts)：全系列 15 篇均对应当前全栈版本，第十五篇提供项目结构与完整源码汇总。
