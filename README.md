@@ -55,6 +55,8 @@ pnpm build
 
 ## 文档
 
+- [从零搭建的思路与具体步骤](docs/study-2026-11/2026-11-23-nextblog-build-roadmap.md)。
+
 - [四组十二篇深入教学报告](docs/reports/00-guide.md)：React 与 Next.js、Express 与 TypeScript、TypeORM、数据库连接；含具体代码和练习答案。
 
 - [全栈博客使用与教学](docs/05-全栈博客使用与教学.md)：文件说明、Cookie/Session、CSRF、权限矩阵、接口与部署。
