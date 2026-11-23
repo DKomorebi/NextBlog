@@ -1,11 +1,13 @@
 import { createDatabase } from "./db";
 import { createApp } from "./app";
+import { createRegistrationMailer } from "./mail";
 async function main() {
   const db = await createDatabase().initialize();
   const { app, close } = createApp(db, {
     secret: process.env.SESSION_SECRET ?? "",
     origin: process.env.APP_ORIGIN ?? "http://localhost:3000",
     production: process.env.NODE_ENV === "production",
+    mailer: createRegistrationMailer(),
   });
   const server = app.listen(
     Number(process.env.API_PORT ?? 4000),

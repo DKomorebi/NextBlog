@@ -12,6 +12,8 @@ import helmet from "helmet";
 import { rateLimit } from "express-rate-limit";
 import { z } from "zod";
 import type { DataSource } from "typeorm";
+import { createRegistration, RegistrationError } from "./registration";
+import type { RegistrationMailer } from "./mail";
 import {
   UserEntity,
   ArticleEntity,
@@ -65,11 +67,14 @@ export function createApp(
     origin: string;
     production?: boolean;
     pool?: Pool;
+    mailer?: RegistrationMailer;
+    now?: () => Date;
   },
 ) {
   if (options.secret.length < 32)
     throw new Error("SESSION_SECRET 至少需要 32 个字符");
   const app = express();
+  const registration = createRegistration(db, options.secret, options.mailer, options.now);
   const pool =
     options.pool ?? new Pool({ connectionString: process.env.DATABASE_URL });
   const Store = connectPgSimple(session);
@@ -174,20 +179,30 @@ export function createApp(
       req.session.save((e) => (e ? reject(e) : resolve())),
     );
   }
+  app.post("/api/auth/register/code", rateLimit({
+    windowMs: 60 * 60 * 1000,
+    limit: 10,
+    standardHeaders: "draft-7",
+    legacyHeaders: false,
+    message: { message: "验证码发送过于频繁，请稍后重试" },
+  }), async (req, res) => {
+    const { email } = credentials.pick({ email: true }).strict().parse(req.body);
+    await registration.sendCode(email);
+    res.json({ message: "若邮箱尚未注册，验证码将发送到该邮箱，5 分钟内有效；已有账号请直接登录。", retryAfter: 60 });
+  });
   app.post("/api/auth/register", authLimit, async (req, res) => {
     const input = credentials
-      .extend({ username: z.string().trim().min(2).max(40) })
+      .extend({
+        username: z.string().trim().min(2).max(40),
+        confirmPassword: z.string().min(10).max(72),
+        verificationCode: z.string().regex(/^\d{6}$/, "请输入 6 位邮箱验证码"),
+      })
       .strict()
+      .refine((v) => v.password === v.confirmPassword, {
+        message: "两次输入的密码不一致", path: ["confirmPassword"],
+      })
       .parse(req.body);
-    const repo = db.getRepository(UserEntity);
-    const user = await repo.save(
-      repo.create({
-        email: input.email,
-        username: input.username,
-        passwordHash: await bcrypt.hash(input.password, 12),
-        role: "user",
-      }),
-    );
+    const user = await registration.register(input);
     await loginSession(req, user);
     res.status(201).json({ user: publicUser(user), csrf: req.session.csrf });
   });
@@ -381,6 +396,10 @@ export function createApp(
   app.use((_req, res) => res.status(404).json({ message: "接口不存在" }));
   app.use(
     (error: unknown, _req: Request, res: Response, _next: NextFunction) => {
+      if (error instanceof RegistrationError) {
+        res.status(error.status).json({ message: error.message });
+        return;
+      }
       if (error instanceof z.ZodError) {
         res
           .status(400)

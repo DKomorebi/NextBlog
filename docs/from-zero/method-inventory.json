@@ -1,0 +1,1586 @@
+[
+  {
+    "file": "src/app/about/page.tsx",
+    "line": 2,
+    "end": 25,
+    "name": "About",
+    "owner": "About",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/admin/new/page.tsx",
+    "line": 3,
+    "end": 9,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/admin/page.tsx",
+    "line": 2,
+    "end": 4,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/admin/[id]/page.tsx",
+    "line": 3,
+    "end": 13,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/archive/page.tsx",
+    "line": 3,
+    "end": 5,
+    "name": "Archive",
+    "owner": "Archive",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/layout.tsx",
+    "line": 9,
+    "end": 30,
+    "name": "RootLayout",
+    "owner": "RootLayout",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/login/page.tsx",
+    "line": 3,
+    "end": 5,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/not-found.tsx",
+    "line": 3,
+    "end": 19,
+    "name": "NotFound",
+    "owner": "NotFound",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/page.tsx",
+    "line": 2,
+    "end": 4,
+    "name": "Home",
+    "owner": "Home",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/posts/[slug]/page.tsx",
+    "line": 2,
+    "end": 8,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/app/register/page.tsx",
+    "line": 3,
+    "end": 5,
+    "name": "Page",
+    "owner": "Page",
+    "trigger": "函数调用",
+    "chapter": "03-next-routes"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 58,
+    "end": 79,
+    "name": "api",
+    "owner": "api",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 75,
+    "end": 75,
+    "name": "r.json().catch callback",
+    "owner": "api / r.json().catch callback",
+    "trigger": "r.json().catch回调",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 90,
+    "end": 90,
+    "name": "refresh",
+    "owner": "refresh",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 91,
+    "end": 91,
+    "name": "setSession",
+    "owner": "setSession",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 93,
+    "end": 115,
+    "name": "SessionProvider",
+    "owner": "SessionProvider",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 97,
+    "end": 106,
+    "name": "refresh",
+    "owner": "SessionProvider / refresh",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 107,
+    "end": 109,
+    "name": "useEffect callback",
+    "owner": "SessionProvider / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 116,
+    "end": 121,
+    "name": "date",
+    "owner": "date",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 122,
+    "end": 128,
+    "name": "ErrorMessage",
+    "owner": "ErrorMessage",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 129,
+    "end": 188,
+    "name": "Header",
+    "owner": "Header",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 132,
+    "end": 140,
+    "name": "logout",
+    "owner": "Header / logout",
+    "trigger": "函数调用",
+    "chapter": "09-session-ui"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 189,
+    "end": 219,
+    "name": "Markdown",
+    "owner": "Markdown",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 197,
+    "end": 201,
+    "name": "a",
+    "owner": "Markdown / a",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 202,
+    "end": 212,
+    "name": "img",
+    "owner": "Markdown / img",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 220,
+    "end": 428,
+    "name": "ArticleList",
+    "owner": "ArticleList",
+    "trigger": "函数调用",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 237,
+    "end": 262,
+    "name": "useEffect callback",
+    "owner": "ArticleList / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 239,
+    "end": 257,
+    "name": "setTimeout callback",
+    "owner": "ArticleList / useEffect callback / setTimeout callback",
+    "trigger": "setTimeout回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 244,
+    "end": 250,
+    "name": "….then callback",
+    "owner": "ArticleList / useEffect callback / setTimeout callback / ….then callback",
+    "trigger": "….then回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 251,
+    "end": 253,
+    "name": "….catch callback",
+    "owner": "ArticleList / useEffect callback / setTimeout callback / ….catch callback",
+    "trigger": "….catch回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 254,
+    "end": 256,
+    "name": "….finally callback",
+    "owner": "ArticleList / useEffect callback / setTimeout callback / ….finally callback",
+    "trigger": "….finally回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 258,
+    "end": 261,
+    "name": "callback",
+    "owner": "ArticleList / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 263,
+    "end": 267,
+    "name": "useEffect callback",
+    "owner": "ArticleList / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 266,
+    "end": 266,
+    "name": "api<{ name: string }[]>(\"/categories\") .then(setCategories) .catch callback",
+    "owner": "ArticleList / useEffect callback / api<{ name: string }[]>(\"/categories\") .then(setCategories) .catch callback",
+    "trigger": "api<{ name: string }[]>(\"/categories\") .then(setCategories) .catch回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 268,
+    "end": 277,
+    "name": "remove",
+    "owner": "ArticleList / remove",
+    "trigger": "函数调用",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 273,
+    "end": 273,
+    "name": "setRevision callback",
+    "owner": "ArticleList / remove / setRevision callback",
+    "trigger": "setRevision回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 312,
+    "end": 315,
+    "name": "onChange",
+    "owner": "ArticleList / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 323,
+    "end": 326,
+    "name": "onChange",
+    "owner": "ArticleList / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 329,
+    "end": 331,
+    "name": "categories.map callback",
+    "owner": "ArticleList / categories.map callback",
+    "trigger": "categories.map回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 339,
+    "end": 339,
+    "name": "onClick",
+    "owner": "ArticleList / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 339,
+    "end": 339,
+    "name": "setRevision callback",
+    "owner": "ArticleList / onClick / setRevision callback",
+    "trigger": "setRevision回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 353,
+    "end": 357,
+    "name": "onClick",
+    "owner": "ArticleList / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 365,
+    "end": 403,
+    "name": "items.map callback",
+    "owner": "ArticleList / items.map callback",
+    "trigger": "items.map回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 393,
+    "end": 393,
+    "name": "onClick",
+    "owner": "ArticleList / items.map callback / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 410,
+    "end": 410,
+    "name": "onClick",
+    "owner": "ArticleList / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 410,
+    "end": 410,
+    "name": "setPage callback",
+    "owner": "ArticleList / onClick / setPage callback",
+    "trigger": "setPage回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 420,
+    "end": 420,
+    "name": "onClick",
+    "owner": "ArticleList / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 420,
+    "end": 420,
+    "name": "setPage callback",
+    "owner": "ArticleList / onClick / setPage callback",
+    "trigger": "setPage回调",
+    "chapter": "10-list-pages"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 429,
+    "end": 634,
+    "name": "AuthForm",
+    "owner": "AuthForm",
+    "trigger": "函数调用",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 445,
+    "end": 451,
+    "name": "useEffect callback",
+    "owner": "AuthForm / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 447,
+    "end": 449,
+    "name": "window.setInterval callback",
+    "owner": "AuthForm / useEffect callback / window.setInterval callback",
+    "trigger": "window.setInterval回调",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 450,
+    "end": 450,
+    "name": "callback",
+    "owner": "AuthForm / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 453,
+    "end": 475,
+    "name": "sendCode",
+    "owner": "AuthForm / sendCode",
+    "trigger": "函数调用",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 476,
+    "end": 513,
+    "name": "submit",
+    "owner": "AuthForm / submit",
+    "trigger": "函数调用",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 550,
+    "end": 554,
+    "name": "onChange",
+    "owner": "AuthForm / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "12-auth-events"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 635,
+    "end": 687,
+    "name": "ArticleReader",
+    "owner": "ArticleReader",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 639,
+    "end": 655,
+    "name": "useEffect callback",
+    "owner": "ArticleReader / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 643,
+    "end": 648,
+    "name": "api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then callback",
+    "owner": "ArticleReader / useEffect callback / api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then callback",
+    "trigger": "api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 649,
+    "end": 651,
+    "name": "….catch callback",
+    "owner": "ArticleReader / useEffect callback / ….catch callback",
+    "trigger": "….catch回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 652,
+    "end": 654,
+    "name": "callback",
+    "owner": "ArticleReader / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 663,
+    "end": 663,
+    "name": "onClick",
+    "owner": "ArticleReader / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 663,
+    "end": 663,
+    "name": "setRevision callback",
+    "owner": "ArticleReader / onClick / setRevision callback",
+    "trigger": "setRevision回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 688,
+    "end": 823,
+    "name": "Comments",
+    "owner": "Comments",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 697,
+    "end": 715,
+    "name": "useEffect callback",
+    "owner": "Comments / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 702,
+    "end": 708,
+    "name": "….then callback",
+    "owner": "Comments / useEffect callback / ….then callback",
+    "trigger": "….then回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 709,
+    "end": 711,
+    "name": "….catch callback",
+    "owner": "Comments / useEffect callback / ….catch callback",
+    "trigger": "….catch回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 712,
+    "end": 714,
+    "name": "callback",
+    "owner": "Comments / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 716,
+    "end": 734,
+    "name": "submit",
+    "owner": "Comments / submit",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 728,
+    "end": 728,
+    "name": "setRevision callback",
+    "owner": "Comments / submit / setRevision callback",
+    "trigger": "setRevision回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 735,
+    "end": 744,
+    "name": "remove",
+    "owner": "Comments / remove",
+    "trigger": "函数调用",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 740,
+    "end": 740,
+    "name": "setRevision callback",
+    "owner": "Comments / remove / setRevision callback",
+    "trigger": "setRevision回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 761,
+    "end": 761,
+    "name": "onChange",
+    "owner": "Comments / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 778,
+    "end": 796,
+    "name": "items.map callback",
+    "owner": "Comments / items.map callback",
+    "trigger": "items.map回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 787,
+    "end": 787,
+    "name": "onClick",
+    "owner": "Comments / items.map callback / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 805,
+    "end": 805,
+    "name": "onClick",
+    "owner": "Comments / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 805,
+    "end": 805,
+    "name": "setPage callback",
+    "owner": "Comments / onClick / setPage callback",
+    "trigger": "setPage回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 815,
+    "end": 815,
+    "name": "onClick",
+    "owner": "Comments / onClick",
+    "trigger": "JSX onClick",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 815,
+    "end": 815,
+    "name": "setPage callback",
+    "owner": "Comments / onClick / setPage callback",
+    "trigger": "setPage回调",
+    "chapter": "11-reader-comments"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 831,
+    "end": 1000,
+    "name": "Editor",
+    "owner": "Editor",
+    "trigger": "函数调用",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 841,
+    "end": 869,
+    "name": "useEffect callback",
+    "owner": "Editor / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 849,
+    "end": 862,
+    "name": "api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then callback",
+    "owner": "Editor / useEffect callback / api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then callback",
+    "trigger": "api<Article>(\"/articles/\" + encodeURIComponent(slug)) .then回调",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 863,
+    "end": 865,
+    "name": "….catch callback",
+    "owner": "Editor / useEffect callback / ….catch callback",
+    "trigger": "….catch回调",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 866,
+    "end": 868,
+    "name": "callback",
+    "owner": "Editor / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 870,
+    "end": 876,
+    "name": "useEffect callback",
+    "owner": "Editor / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 871,
+    "end": 873,
+    "name": "listener",
+    "owner": "Editor / useEffect callback / listener",
+    "trigger": "函数调用",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 875,
+    "end": 875,
+    "name": "callback",
+    "owner": "Editor / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 877,
+    "end": 880,
+    "name": "change",
+    "owner": "Editor / change",
+    "trigger": "函数调用",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 879,
+    "end": 879,
+    "name": "setForm callback",
+    "owner": "Editor / change / setForm callback",
+    "trigger": "setForm回调",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 881,
+    "end": 898,
+    "name": "save",
+    "owner": "Editor / save",
+    "trigger": "函数调用",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 922,
+    "end": 922,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 933,
+    "end": 933,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 943,
+    "end": 943,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 952,
+    "end": 952,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 962,
+    "end": 971,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/full-blog.tsx",
+    "line": 982,
+    "end": 982,
+    "name": "onChange",
+    "owner": "Editor / onChange",
+    "trigger": "JSX onChange",
+    "chapter": "15-editor"
+  },
+  {
+    "file": "src/components/home-hero.tsx",
+    "line": 2,
+    "end": 23,
+    "name": "HomeHero",
+    "owner": "HomeHero",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 6,
+    "end": 109,
+    "name": "ThemeToggle",
+    "owner": "ThemeToggle",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 10,
+    "end": 39,
+    "name": "useEffect callback",
+    "owner": "ThemeToggle / useEffect callback",
+    "trigger": "Effect建立或清理",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 12,
+    "end": 15,
+    "name": "apply",
+    "owner": "ThemeToggle / useEffect callback / apply",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 16,
+    "end": 28,
+    "name": "sync",
+    "owner": "ThemeToggle / useEffect callback / sync",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 31,
+    "end": 33,
+    "name": "storage",
+    "owner": "ThemeToggle / useEffect callback / storage",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 35,
+    "end": 38,
+    "name": "callback",
+    "owner": "ThemeToggle / useEffect callback / callback",
+    "trigger": "清理回调",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 40,
+    "end": 92,
+    "name": "toggle",
+    "owner": "ThemeToggle / toggle",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 44,
+    "end": 50,
+    "name": "apply",
+    "owner": "ThemeToggle / toggle / apply",
+    "trigger": "函数调用",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/components/theme-toggle.tsx",
+    "line": 70,
+    "end": 70,
+    "name": "transition.finished.catch callback",
+    "owner": "ThemeToggle / toggle / transition.finished.catch callback",
+    "trigger": "transition.finished.catch回调",
+    "chapter": "17-theme"
+  },
+  {
+    "file": "src/lib/posts.ts",
+    "line": 209,
+    "end": 211,
+    "name": "getPost",
+    "owner": "getPost",
+    "trigger": "函数调用",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "src/lib/posts.ts",
+    "line": 210,
+    "end": 210,
+    "name": "posts.find callback",
+    "owner": "getPost / posts.find callback",
+    "trigger": "posts.find回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "src/lib/posts.ts",
+    "line": 213,
+    "end": 215,
+    "name": "formatDate",
+    "owner": "formatDate",
+    "trigger": "函数调用",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/app.test.ts",
+    "line": 10,
+    "end": 247,
+    "name": "test callback",
+    "owner": "test callback",
+    "trigger": "test回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/app.test.ts",
+    "line": 24,
+    "end": 24,
+    "name": "mailer",
+    "owner": "test callback / mailer",
+    "trigger": "函数调用",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 42,
+    "end": 42,
+    "name": "z .string() .min(10) .max(72) .refine callback",
+    "owner": "z .string() .min(10) .max(72) .refine callback",
+    "trigger": "z .string() .min(10) .max(72) .refine回调",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 57,
+    "end": 62,
+    "name": "publicUser",
+    "owner": "publicUser",
+    "trigger": "函数调用",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 63,
+    "end": 434,
+    "name": "createApp",
+    "owner": "createApp",
+    "trigger": "函数调用",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 91,
+    "end": 94,
+    "name": "app.use callback",
+    "owner": "createApp / app.use callback",
+    "trigger": "app.use回调",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 112,
+    "end": 135,
+    "name": "app.use /api callback",
+    "owner": "createApp / app.use /api callback",
+    "trigger": "HTTP请求",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 136,
+    "end": 142,
+    "name": "requireUser",
+    "owner": "createApp / requireUser",
+    "trigger": "函数调用",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 143,
+    "end": 153,
+    "name": "requireAdmin",
+    "owner": "createApp / requireAdmin",
+    "trigger": "函数调用",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 161,
+    "end": 164,
+    "name": "app.get /api/health callback",
+    "owner": "createApp / app.get /api/health callback",
+    "trigger": "HTTP请求",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 165,
+    "end": 171,
+    "name": "app.get /api/auth/session callback",
+    "owner": "createApp / app.get /api/auth/session callback",
+    "trigger": "HTTP请求",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 172,
+    "end": 181,
+    "name": "loginSession",
+    "owner": "createApp / loginSession",
+    "trigger": "函数调用",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 173,
+    "end": 174,
+    "name": "callback",
+    "owner": "createApp / loginSession / callback",
+    "trigger": "闭包/Promise回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 174,
+    "end": 174,
+    "name": "req.session.regenerate callback",
+    "owner": "createApp / loginSession / callback / req.session.regenerate callback",
+    "trigger": "req.session.regenerate回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 178,
+    "end": 179,
+    "name": "callback",
+    "owner": "createApp / loginSession / callback",
+    "trigger": "闭包/Promise回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 179,
+    "end": 179,
+    "name": "req.session.save callback",
+    "owner": "createApp / loginSession / callback / req.session.save callback",
+    "trigger": "req.session.save回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 188,
+    "end": 192,
+    "name": "app.post /api/auth/register/code callback",
+    "owner": "createApp / app.post /api/auth/register/code callback",
+    "trigger": "HTTP请求",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 193,
+    "end": 208,
+    "name": "app.post /api/auth/register callback",
+    "owner": "createApp / app.post /api/auth/register callback",
+    "trigger": "HTTP请求",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 201,
+    "end": 201,
+    "name": "….refine callback",
+    "owner": "createApp / app.post /api/auth/register callback / ….refine callback",
+    "trigger": "….refine回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 209,
+    "end": 225,
+    "name": "app.post /api/auth/login callback",
+    "owner": "createApp / app.post /api/auth/login callback",
+    "trigger": "HTTP请求",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 226,
+    "end": 237,
+    "name": "app.post /api/auth/logout callback",
+    "owner": "createApp / app.post /api/auth/logout callback",
+    "trigger": "HTTP请求",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 227,
+    "end": 236,
+    "name": "req.session.destroy callback",
+    "owner": "createApp / app.post /api/auth/logout callback / req.session.destroy callback",
+    "trigger": "req.session.destroy回调",
+    "chapter": "13-auth-server"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 238,
+    "end": 271,
+    "name": "app.get /api/articles callback",
+    "owner": "createApp / app.get /api/articles callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 272,
+    "end": 283,
+    "name": "app.get /api/categories callback",
+    "owner": "createApp / app.get /api/categories callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 284,
+    "end": 293,
+    "name": "app.get /api/articles/:slug callback",
+    "owner": "createApp / app.get /api/articles/:slug callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 294,
+    "end": 297,
+    "name": "app.post /api/articles callback",
+    "owner": "createApp / app.post /api/articles callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 298,
+    "end": 316,
+    "name": "app.put /api/articles/:id callback",
+    "owner": "createApp / app.put /api/articles/:id callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 307,
+    "end": 307,
+    "name": "version",
+    "owner": "createApp / app.put /api/articles/:id callback / version",
+    "trigger": "函数调用",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 317,
+    "end": 326,
+    "name": "app.delete /api/articles/:id callback",
+    "owner": "createApp / app.delete /api/articles/:id callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 327,
+    "end": 352,
+    "name": "app.get /api/articles/:id/comments callback",
+    "owner": "createApp / app.get /api/articles/:id/comments callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 344,
+    "end": 349,
+    "name": "items.map callback",
+    "owner": "createApp / app.get /api/articles/:id/comments callback / items.map callback",
+    "trigger": "items.map回调",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 361,
+    "end": 380,
+    "name": "app.post /api/articles/:id/comments callback",
+    "owner": "createApp / app.post /api/articles/:id/comments callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 382,
+    "end": 395,
+    "name": "app.delete /api/comments/:id callback",
+    "owner": "createApp / app.delete /api/comments/:id callback",
+    "trigger": "HTTP请求",
+    "chapter": "08-typeorm-crud"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 396,
+    "end": 396,
+    "name": "app.use callback",
+    "owner": "createApp / app.use callback",
+    "trigger": "app.use回调",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 398,
+    "end": 425,
+    "name": "app.use callback",
+    "owner": "createApp / app.use callback",
+    "trigger": "app.use回调",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 409,
+    "end": 409,
+    "name": "error.issues.map callback",
+    "owner": "createApp / app.use callback / error.issues.map callback",
+    "trigger": "error.issues.map回调",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/app.ts",
+    "line": 429,
+    "end": 432,
+    "name": "close",
+    "owner": "createApp / close",
+    "trigger": "函数调用",
+    "chapter": "05-express-syntax"
+  },
+  {
+    "file": "server/db.ts",
+    "line": 7,
+    "end": 17,
+    "name": "createDatabase",
+    "owner": "createDatabase",
+    "trigger": "函数调用",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/index.ts",
+    "line": 4,
+    "end": 28,
+    "name": "main",
+    "owner": "main",
+    "trigger": "函数调用",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/index.ts",
+    "line": 15,
+    "end": 18,
+    "name": "app.listen callback",
+    "owner": "main / app.listen callback",
+    "trigger": "app.listen回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/index.ts",
+    "line": 21,
+    "end": 26,
+    "name": "process.once callback",
+    "owner": "main / process.once callback",
+    "trigger": "process.once回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/index.ts",
+    "line": 22,
+    "end": 26,
+    "name": "server.close callback",
+    "owner": "main / process.once callback / server.close callback",
+    "trigger": "server.close回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/index.ts",
+    "line": 29,
+    "end": 32,
+    "name": "main().catch callback",
+    "owner": "main().catch callback",
+    "trigger": "main().catch回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/mail.ts",
+    "line": 6,
+    "end": 36,
+    "name": "createRegistrationMailer",
+    "owner": "createRegistrationMailer",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/mail.ts",
+    "line": 26,
+    "end": 35,
+    "name": "callback",
+    "owner": "createRegistrationMailer / callback",
+    "trigger": "清理回调",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/manage.ts",
+    "line": 4,
+    "end": 42,
+    "name": "main",
+    "owner": "main",
+    "trigger": "函数调用",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/manage.ts",
+    "line": 31,
+    "end": 32,
+    "name": "p.sections .map callback",
+    "owner": "main / p.sections .map callback",
+    "trigger": "p.sections .map回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/manage.ts",
+    "line": 43,
+    "end": 46,
+    "name": "main().catch callback",
+    "owner": "main().catch callback",
+    "trigger": "main().catch回调",
+    "chapter": "06-database-start"
+  },
+  {
+    "file": "server/migration.ts",
+    "line": 3,
+    "end": 10,
+    "name": "up",
+    "owner": "up",
+    "trigger": "函数调用",
+    "chapter": "07-typeorm-model"
+  },
+  {
+    "file": "server/migration.ts",
+    "line": 11,
+    "end": 15,
+    "name": "down",
+    "owner": "down",
+    "trigger": "函数调用",
+    "chapter": "07-typeorm-model"
+  },
+  {
+    "file": "server/registration-migration.ts",
+    "line": 4,
+    "end": 16,
+    "name": "up",
+    "owner": "up",
+    "trigger": "函数调用",
+    "chapter": "07-typeorm-model"
+  },
+  {
+    "file": "server/registration-migration.ts",
+    "line": 17,
+    "end": 19,
+    "name": "down",
+    "owner": "down",
+    "trigger": "函数调用",
+    "chapter": "07-typeorm-model"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 11,
+    "end": 125,
+    "name": "test callback",
+    "owner": "test callback",
+    "trigger": "test回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 23,
+    "end": 23,
+    "name": "now",
+    "owner": "test callback / now",
+    "trigger": "函数调用",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 27,
+    "end": 31,
+    "name": "mailer",
+    "owner": "test callback / mailer",
+    "trigger": "函数调用",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 39,
+    "end": 40,
+    "name": "post",
+    "owner": "test callback / post",
+    "trigger": "函数调用",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 41,
+    "end": 44,
+    "name": "payload",
+    "owner": "test callback / payload",
+    "trigger": "函数调用",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 95,
+    "end": 95,
+    "name": "concurrent.filter callback",
+    "owner": "test callback / concurrent.filter callback",
+    "trigger": "concurrent.filter回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 99,
+    "end": 99,
+    "name": "signups.filter callback",
+    "owner": "test callback / signups.filter callback",
+    "trigger": "signups.filter回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 102,
+    "end": 102,
+    "name": "assert.rejects callback",
+    "owner": "test callback / assert.rejects callback",
+    "trigger": "assert.rejects回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.test.ts",
+    "line": 114,
+    "end": 114,
+    "name": "assert.rejects callback",
+    "owner": "test callback / assert.rejects callback",
+    "trigger": "assert.rejects回调",
+    "chapter": "18-tests-build"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 8,
+    "end": 10,
+    "name": "constructor",
+    "owner": "constructor",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 13,
+    "end": 94,
+    "name": "createRegistration",
+    "owner": "createRegistration",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 17,
+    "end": 17,
+    "name": "callback",
+    "owner": "createRegistration / callback",
+    "trigger": "闭包/Promise回调",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 19,
+    "end": 22,
+    "name": "digest",
+    "owner": "createRegistration / digest",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 25,
+    "end": 64,
+    "name": "sendCode",
+    "owner": "createRegistration / sendCode",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 66,
+    "end": 92,
+    "name": "register",
+    "owner": "createRegistration / register",
+    "trigger": "函数调用",
+    "chapter": "14-email-transaction"
+  },
+  {
+    "file": "server/registration.ts",
+    "line": 68,
+    "end": 89,
+    "name": "db.transaction callback",
+    "owner": "createRegistration / register / db.transaction callback",
+    "trigger": "db.transaction回调",
+    "chapter": "14-email-transaction"
+  }
+]

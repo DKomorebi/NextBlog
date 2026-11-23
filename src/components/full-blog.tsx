@@ -436,10 +436,55 @@ export function AuthForm({ register = false }: { register?: boolean }) {
   } = useContext(Context);
   const [error, setError] = useState(""),
     [busy, setBusy] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [notice, setNotice] = useState("");
+  const [remaining, setRemaining] = useState(0);
+  const formRef = useRef<HTMLFormElement>(null);
+  const sendingRef = useRef(false);
+  const retryAt = useRef(0);
+  useEffect(() => {
+    if (!register) return;
+    const timer = window.setInterval(() => {
+      setRemaining(Math.max(0, Math.ceil((retryAt.current - Date.now()) / 1000)));
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, [register]);
   const router = useRouter();
+  async function sendCode() {
+    if (sendingRef.current || Date.now() < retryAt.current) return;
+    const email = formRef.current?.elements.namedItem("email");
+    if (!(email instanceof HTMLInputElement) || !email.reportValidity()) return;
+    sendingRef.current = true;
+    setSending(true);
+    setError("");
+    setNotice("");
+    try {
+      const result = await api<{ message: string; retryAfter: number }>(
+        "/auth/register/code", "POST", { email: email.value }, session.csrf,
+      );
+      retryAt.current = Date.now() + result.retryAfter * 1000;
+      setRemaining(result.retryAfter);
+      setNotice(result.message);
+    } catch (e) {
+      setError((e as Error).message);
+      await refresh();
+    } finally {
+      sendingRef.current = false;
+      setSending(false);
+    }
+  }
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
+    const password = f.get("password");
+    // 前端即时提示；后端仍会独立校验，不能仅信任网页。
+    if (register && password !== f.get("confirmPassword")) {
+      setError("两次输入的密码不一致，请重新确认");
+      const confirmation = e.currentTarget.elements.namedItem("confirmPassword");
+      if (confirmation instanceof HTMLInputElement) confirmation.focus();
+      return;
+    }
+    setError("");
     setBusy(true);
     try {
       setSession(
@@ -448,8 +493,12 @@ export function AuthForm({ register = false }: { register?: boolean }) {
           "POST",
           {
             email: f.get("email"),
-            password: f.get("password"),
-            ...(register ? { username: f.get("username") } : {}),
+            password,
+            ...(register ? {
+              username: f.get("username"),
+              confirmPassword: f.get("confirmPassword"),
+              verificationCode: f.get("verificationCode"),
+            } : {}),
           },
           session.csrf,
         ),
@@ -476,7 +525,7 @@ export function AuthForm({ register = false }: { register?: boolean }) {
           你已登录为 {session.user.username}。<Link href="/">返回首页</Link>
         </p>
       ) : (
-        <form onSubmit={submit}>
+        <form ref={formRef} onSubmit={submit}>
           {register && (
             <label>
               昵称
@@ -497,6 +546,12 @@ export function AuthForm({ register = false }: { register?: boolean }) {
               name="email"
               type="email"
               autoComplete="email"
+              readOnly={sending || busy}
+              onChange={() => {
+                setNotice("");
+                const code = formRef.current?.elements.namedItem("verificationCode");
+                if (code instanceof HTMLInputElement) code.value = "";
+              }}
               maxLength={255}
               required
             />
@@ -514,9 +569,55 @@ export function AuthForm({ register = false }: { register?: boolean }) {
             />
           </label>
           <p className="muted">至少 10 个字符，最多 72 字节。</p>
+          {register && (
+            <label>
+              确认密码
+              <input
+                className="input"
+                name="confirmPassword"
+                type="password"
+                minLength={10}
+                maxLength={72}
+                autoComplete="new-password"
+                required
+              />
+            </label>
+          )}
+          {register && (
+            <div className="grid gap-3">
+              <label htmlFor="registration-code">邮箱验证码</label>
+              <div className="flex flex-wrap gap-2">
+                <input
+                  className="input min-w-0 flex-1"
+                  id="registration-code"
+                  name="verificationCode"
+                  type="text"
+                  inputMode="numeric"
+                  autoComplete="one-time-code"
+                  pattern="[0-9]{6}"
+                  minLength={6}
+                  maxLength={6}
+                  placeholder="6 位数字"
+                  aria-describedby="registration-code-notice"
+                  required
+                />
+                <button
+                  className="btn btn-outline"
+                  type="button"
+                  onClick={sendCode}
+                  disabled={sending || busy || loading || !session.csrf || remaining > 0}
+                >
+                  {sending ? "正在发送…" : remaining > 0 ? `${remaining} 秒后重发` : "发送验证码"}
+                </button>
+              </div>
+              <p id="registration-code-notice" className="muted" role="status">
+                {notice || "验证码 5 分钟内有效，请查收收件箱或垃圾邮件。"}
+              </p>
+            </div>
+          )}
           <button
             className="btn btn-primary"
-            disabled={busy || loading || !session.csrf}
+            disabled={busy || sending || loading || !session.csrf}
           >
             {busy ? "请稍候…" : register ? "注册并登录" : "登录"}
           </button>

@@ -1,0 +1,146 @@
+{
+  "src/app/about/page.tsx": {
+    "sha256": "4f76f4b49789f8018d907d24b05f07c0d6bf4d20c9f1c80c923c6017e0ea444c",
+    "lines": 25
+  },
+  "src/app/admin/[id]/page.tsx": {
+    "sha256": "3f6f925c6632f894c52a87224e92bd47c148263ee7d909cf659f55719a0094cc",
+    "lines": 13
+  },
+  "src/app/admin/new/page.tsx": {
+    "sha256": "93536324a61c89e0e8940aa165f4b1596ea1eae6048db39dbf57d07573d2ccdf",
+    "lines": 9
+  },
+  "src/app/admin/page.tsx": {
+    "sha256": "631bf8cdc05478b190ed32ffe351d0c8666e860eb7a9e53320283b66c4a9a6b3",
+    "lines": 4
+  },
+  "src/app/archive/page.tsx": {
+    "sha256": "8888f2a2b9b56527b3a4f2fe9e162b4458f89211a38efeb468b391b2030c18c6",
+    "lines": 5
+  },
+  "src/app/globals.css": {
+    "sha256": "9168a622124977504fe6f95bb80d1c379b6141cf4d069201e49d1cc0a02b9aea",
+    "lines": 792
+  },
+  "src/app/layout.tsx": {
+    "sha256": "2c420ea29526fe04f3f5ee48ab37a71f2d3dd1268e299190abe526598c0fce40",
+    "lines": 30
+  },
+  "src/app/login/page.tsx": {
+    "sha256": "1cad94120696bfb7a62ae48364ebb26b7355d5e08eb600526505f70028b2c1d8",
+    "lines": 5
+  },
+  "src/app/not-found.tsx": {
+    "sha256": "8ef3b086583d7df499e91d0aa56a3aa07eb432e225c93a127e117a0e8cb1c64d",
+    "lines": 19
+  },
+  "src/app/page.tsx": {
+    "sha256": "033ac29ce9c3b3ccba54f1f5832923a6e4d4820c1b14c1c5281a2aaa305085ef",
+    "lines": 4
+  },
+  "src/app/posts/[slug]/page.tsx": {
+    "sha256": "1b3c17a6a4f41beb68c27c7abfb163dc2c9888b736c636752d80c56add88ab78",
+    "lines": 8
+  },
+  "src/app/register/page.tsx": {
+    "sha256": "c439d49590283c273d832ae19466d65b9c6b767b84d2d846e06dda2683c6f249",
+    "lines": 5
+  },
+  "src/components/full-blog.tsx": {
+    "sha256": "c9196feccce47835b38f94b236f78bd903c76c946dee6111c5bd7a2f279b87c2",
+    "lines": 1000
+  },
+  "src/components/home-hero.tsx": {
+    "sha256": "9940168990bc1e765e9fd15b937c8eaac03621cafff7c6f3c0a06b689f85ce5c",
+    "lines": 23
+  },
+  "src/components/theme-toggle.tsx": {
+    "sha256": "b1f7472a040500549b6b7abf7ad3cb970e3afc77a39ef9bc6f008c1b2ce8b5b9",
+    "lines": 109
+  },
+  "src/lib/posts.ts": {
+    "sha256": "e72f6a5e6fe085b79110d239f5b63c10fe69d61c5bfda36b17917243047ad3d2",
+    "lines": 215
+  },
+  "src/lib/theme.ts": {
+    "sha256": "3cfb791e3a3084f8632e4a360cb42b3e2b63f50786a8e435816c5f9b343f5679",
+    "lines": 6
+  },
+  "src/types/post.ts": {
+    "sha256": "267fd3381470fd00dd73f9f672b783eddfbb200d6a3174ae8ded3fca315087f3",
+    "lines": 20
+  },
+  "server/app.test.ts": {
+    "sha256": "3896956fc7fad2bfe4ca9674d2c8087e38d7a6562cf091ee7b257c32bb988491",
+    "lines": 247
+  },
+  "server/app.ts": {
+    "sha256": "6d6bdecec7db577a0a989a92a071b1485bd2b57608efe84d7a4df55634f0d3e4",
+    "lines": 434
+  },
+  "server/db.ts": {
+    "sha256": "180bf05893c262e8a3a136930db853f257690b21921e366017b72439c46c60f9",
+    "lines": 17
+  },
+  "server/entities.ts": {
+    "sha256": "6530a94ab9a22c766a8200e35f27fb8e571c9efe56b44251d8d2448b6373c705",
+    "lines": 66
+  },
+  "server/index.ts": {
+    "sha256": "8b68e5bc0d580d13409dec0b9c0ab8c21a91ceecf1f1f0bd4d8eed25940248e3",
+    "lines": 32
+  },
+  "server/mail.ts": {
+    "sha256": "e2693a63532858a40f3bb7feb9b3af43bbfa30b76d8666d85ac0e868890df008",
+    "lines": 36
+  },
+  "server/manage.ts": {
+    "sha256": "1444c35233c0a842eba85f5cda781712ead73afdaf18c3feb80237ebb24bb8db",
+    "lines": 46
+  },
+  "server/migration.ts": {
+    "sha256": "ef42cf9a9deaacffbd79b9b02c2db414352fd5cee7ada930f45aab40c052e642",
+    "lines": 16
+  },
+  "server/production.ts": {
+    "sha256": "dea4b6b9f83f9156fc251fb66d06bf5f8353291121d4392037536ac2a6e1079f",
+    "lines": 2
+  },
+  "server/registration-migration.ts": {
+    "sha256": "08f4c00f59f441fcb82cd19c5ad4805b81f068d10e4264413563cdd1942be2f1",
+    "lines": 20
+  },
+  "server/registration.test.ts": {
+    "sha256": "08bc57c6f23d35faa559c89e2a1b157c6c3620c6b1049e1bb4b4ed1abb5c382e",
+    "lines": 125
+  },
+  "server/registration.ts": {
+    "sha256": "a118cb010f68399f01fba7af7d01c94096e7a0257731ce5434c14804e76a81ee",
+    "lines": 94
+  },
+  "package.json": {
+    "sha256": "2d5bbf2228e6ede0175173a48e60a4237c35614ad43712cc60373e04d726e94d",
+    "lines": 60
+  },
+  "tsconfig.json": {
+    "sha256": "337bb4102ae158e18e87963ab723729a5ef1c6d054ad205ca509cae2d4fc38f6",
+    "lines": 43
+  },
+  "next.config.ts": {
+    "sha256": "79c7e1719755b639ca410a20d4e88993711b6a1a76ee58c86ab9b138eec086f3",
+    "lines": 15
+  },
+  "postcss.config.mjs": {
+    "sha256": "69aa80a4682c0d665069ef0a4109ec9e0c8618bef2bcaf967b9ec076f1a425db",
+    "lines": 1
+  },
+  ".env.example": {
+    "sha256": "27a1658833e30aec2cd264ab753c5d0777b52fa432ab3d4cf7fdaaf90169218f",
+    "lines": 13
+  },
+  ".gitignore": {
+    "sha256": "091e26493cdce733e822849c562f10c75b9db38699a5f7302bf633622f7d71d8",
+    "lines": 15
+  }
+}

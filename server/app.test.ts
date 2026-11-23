@@ -20,7 +20,10 @@ test("PostgreSQL integration: authentication, session, CSRF, RBAC, CRUD and comm
   await db.runMigrations();
   const origin = "http://localhost:3000";
   const secret = randomBytes(48).toString("hex");
+  const codes = new Map<string, string>();
+  const mailer = async (email: string, code: string) => { codes.set(email, code); };
   let service = createApp(db, {
+    mailer,
     secret,
     origin,
     pool: new Pool({ connectionString: base.toString() }),
@@ -70,6 +73,9 @@ test("PostgreSQL integration: authentication, session, CSRF, RBAC, CRUD and comm
     r = await user.get("/api/auth/session");
     const before = r.headers["set-cookie"][0].split(";")[0];
     const init = r.body.csrf;
+    await user.post("/api/auth/register/code")
+      .set("Origin", origin).set("X-CSRF-Token", init)
+      .send({ email: "reader@example.com" }).expect(200);
     r = await user
       .post("/api/auth/register")
       .set("Origin", origin)
@@ -78,6 +84,8 @@ test("PostgreSQL integration: authentication, session, CSRF, RBAC, CRUD and comm
         email: "reader@example.com",
         username: "读者",
         password: "Testing-password-123",
+        confirmPassword: "Testing-password-123",
+        verificationCode: codes.get("reader@example.com"),
       })
       .expect(201);
     let token = r.body.csrf;
@@ -124,6 +132,9 @@ test("PostgreSQL integration: authentication, session, CSRF, RBAC, CRUD and comm
       .expect(409);
     const other = request.agent(service.app);
     const otherCsrf = (await other.get("/api/auth/session")).body.csrf;
+    await other.post("/api/auth/register/code")
+      .set("Origin", origin).set("X-CSRF-Token", otherCsrf)
+      .send({ email: "other@example.com" }).expect(200);
     r = await other
       .post("/api/auth/register")
       .set("Origin", origin)
@@ -132,6 +143,8 @@ test("PostgreSQL integration: authentication, session, CSRF, RBAC, CRUD and comm
         email: "other@example.com",
         username: "另一位读者",
         password: "Testing-password-456",
+        confirmPassword: "Testing-password-456",
+        verificationCode: codes.get("other@example.com"),
       })
       .expect(201);
     const otherToken = r.body.csrf;

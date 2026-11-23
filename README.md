@@ -9,7 +9,7 @@ Next.js + Express + TypeScript + Tailwind CSS + DaisyUI + PostgreSQL + TypeORM�
 - DaisyUI 文章卡片、Lucide 图标、可持久化的深浅主题与圆形展开过渡。
 - Markdown 阅读器、代码高亮、表格、图片、Markdown 文件导入与编辑预览。
 - 真实数据库文章增删改查、正文搜索、分类与分页。
-- 注册、登录、退出，PostgreSQL 持久化 Session。
+- 注册时确认密码、邮箱验证码；登录、退出，PostgreSQL 持久化 Session。
 - 只有管理员可以新增、修改、删除文章；普通用户注册无法选择管理员角色。
 - 登录后评论，作者可删除自己的评论，管理员可删除任意评论。
 - HttpOnly / SameSite Cookie、生产 Secure Cookie、CSRF 校验、密码哈希、请求限流与输入校验。
@@ -21,8 +21,11 @@ Next.js + Express + TypeScript + Tailwind CSS + DaisyUI + PostgreSQL + TypeORM�
 
 ```powershell
 pnpm install --frozen-lockfile
+pnpm db:migrate
 pnpm dev
 ```
+
+注册邮件需要在 `.env` 配置 `SMTP_HOST`、`SMTP_PORT`、`SMTP_USER`、`SMTP_PASS`、`SMTP_FROM`，详见 [注册与邮箱验证](docs/07-注册与邮箱验证.md)。缺少配置时发送接口会明确报错，不会跳过邮箱验证。旧账号仍可正常登录。
 
 访问 http://localhost:3000 。Express 监听 127.0.0.1:4000，通过 Next.js 同源代理访问。若 3000 已被之前的开发服务占用，先关闭自己启动的旧服务再运行。
 
@@ -55,6 +58,10 @@ pnpm build
 
 ## 文档
 
+- **[从零到逐方法：22 篇详细教程](docs/from-zero/00-guide.md)**：搭建顺序、所有页面事件与方法、Express 语法、TypeORM、注册邮箱事务、DDD 边界和完整源码，以此作为最新主学习路线。
+
+- [注册与邮箱验证](docs/07-注册与邮箱验证.md)：确认密码、React 事件、SMTP、验证码事务、配置与测试。
+
 - [Express + TypeScript + DDD 教学与构建文档](docs/ddd/00-guide.md)：原模板、TypeORM 分层迁移及 node_modules 解释。
 
 - [从零搭建的思路与具体步骤](docs/study-2026-11/2026-11-23-nextblog-build-roadmap.md)。
@@ -66,4 +73,4 @@ pnpm build
 - [完整系列教程与源码归档](https://github.com/DKomorebi/DKomorebi.github.io/tree/main/_posts)：全系列 15 篇均对应当前全栈版本，第十五篇提供项目结构与完整源码汇总。
 - [全栈入门教学](docs/01-教学说明.md) / [后端业务](docs/02-后端接入路线.md) / [验收与排错](docs/03-验收与练习.md) / [项目结构与源码索引](docs/06-项目结构与源码索引.md)。
 
-当前不包含邮件验证、密码找回、图片上传和嵌套回复。数据保存在 PostgreSQL 中，旧 out 目录不再是可部署的当前版本。
+当前不包含密码找回、图片上传和嵌套回复。数据保存在 PostgreSQL 中，旧 out 目录不再是可部署的当前版本。
