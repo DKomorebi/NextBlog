@@ -55,6 +55,8 @@ pnpm build
 
 ## 文档
 
+- [Express + TypeScript + DDD 教学与构建文档](docs/ddd/00-guide.md)：原模板、TypeORM 分层迁移及 node_modules 解释。
+
 - [从零搭建的思路与具体步骤](docs/study-2026-11/2026-11-23-nextblog-build-roadmap.md)。
 
 - [四组十二篇深入教学报告](docs/reports/00-guide.md)：React 与 Next.js、Express 与 TypeScript、TypeORM、数据库连接；含具体代码和练习答案。
